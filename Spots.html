@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Beautiful Spots in the Philippines</title>
+<style>
+  :root {
+    --paper: #fbf7ef;
+    --leaf: #177dca;
+    --mango: #1edcbf;
+    --ink: #26333b;
+    --muted: #6b7a80;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; scroll-padding-top: 4rem; }
+  body {
+    font-family: "Trebuchet MS", Verdana, sans-serif;
+    line-height: 1.65;
+    color: var(--ink);
+    background: var(--paper);
+  }
+
+  header {
+    background: var(--mango);
+    padding: 3.5rem 1.5rem 3rem;
+    text-align: left;
+  }
+  header > * { max-width: 960px; margin-left: auto; margin-right: auto; }
+  header h1 {
+    font-size: clamp(2.2rem, 7vw, 4rem);
+    line-height: 1.05;
+    max-width: 12ch;
+    margin-left: max(1.5rem, calc((100% - 960px) / 2));
+  }
+  header p {
+    margin-top: 1rem;
+    font-size: 1.1rem;
+    margin-left: max(1.5rem, calc((100% - 960px) / 2));
+  }
+
+
+  nav { background: var(--leaf); position: sticky; top: 0; z-index: 10; }
+  nav ul {
+    list-style: none; display: flex; flex-wrap: wrap;
+    max-width: 960px; margin: 0 auto; padding: 0 .75rem;
+  }
+  nav a {
+    display: block; padding: .8rem 1rem;
+    color: #fff; text-decoration: none; font-size: .95rem;
+    border-bottom: 3px solid transparent;
+  }
+  nav a:hover, nav a:focus-visible { border-bottom-color: var(--mango); outline: none; }
+
+  
+  main { max-width: 960px; margin: 0 auto; padding: 2.5rem 1.25rem; }
+  #intro { max-width: 60ch; margin-bottom: 4rem; }
+  #intro p { font-size: 1.1rem; }
+  h2 { font-size: 2rem; color: var(--leaf); margin-bottom: 1.2rem; }
+  #intro h2 { margin-bottom: .6rem; }
+
+  
+  article {
+    margin-bottom: 4.5rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.25rem;
+  }
+  article h2, article > p { grid-column: 1 / -1; }
+  article > p { max-width: 65ch; }
+
+  figure {
+    background: #fff;
+    padding: .6rem .6rem 0;
+    box-shadow: 0 2px 8px rgba(38, 51, 59, .18);
+    transform: rotate(-1.2deg);
+  }
+  article:nth-of-type(even) figure { transform: rotate(1.2deg); }
+  figure img { display: block; width: 100%; height: 240px; object-fit: cover; }
+  figcaption { padding: .6rem .2rem .8rem; font-size: .85rem; color: var(--muted); }
+
+  video {
+    width: 100%; height: 100%;
+    min-height: 240px;
+    object-fit: cover;
+    background: #000;
+    border: 6px solid #fff;
+    box-shadow: 0 2px 8px rgba(38, 51, 59, .18);
+  }
+
+  @media (max-width: 640px) {
+    article { grid-template-columns: 1fr; }
+    video { min-height: 0; aspect-ratio: 16 / 9; }
+  }
+
+
+  footer { background: var(--ink); color: #fff; padding: 2.5rem 1.5rem; }
+  footer .wrap { max-width: 960px; margin: 0 auto; }
+  footer h2 { color: var(--mango); font-size: 1.4rem; margin-bottom: .5rem; }
+  footer ul { list-style: none; }
+  footer a { color: #fff; }
+</style>
+</head>
+<body>
+
+<audio src="Filipino audio.mp3" autoplay loop></audio>
+
+
+<header>
+  <h1>Beautiful Spots in the Philippines</h1>
+  <p>Discover five breathtaking destinations worth visiting.</p>
+</header>
+
+<nav>
+  <ul>
+    <li><a href="#intro">Introduction</a></li>
+    <li><a href="#boracay">Boracay</a></li>
+    <li><a href="#Puerto-Princesa">Puerto Princesa</a></li>
+    <li><a href="#chocolate-hills">Bohol</a></li>
+    <li><a href="#Cebu">Cebu</a></li>
+    <li><a href="#siargao">Siargao</a></li>
+  </ul>
+</nav>
+
+<main>
+  <section id="intro">
+    <h2>Introduction</h2>
+    <p>The Philippines is home to some of the most stunning natural wonders in Southeast Asia. From white sand beaches to ancient rice terraces, here are five spots every traveler should see.</p>
+  </section>
+
+  <article id="boracay">
+    <h2>Boracay</h2>
+    <figure>
+      <img src="puka beach.jpg" alt="Puka Beach in Boracay">
+      <figcaption>Boracay's Puka Beach, famous for Puka shells mixed with sand.</figcaption>
+    </figure>
+    <video src="boracay.mp4" controls muted loop playsinline preload="metadata"></video>
+    <p>Boracay is a small island in the Visayas known worldwide for White Beach, its four-kilometer stretch of fine white sand and clear turquoise water, popular for swimming and island hopping.</p>
+  </article>
+
+  <article id="Puerto-Princesa">
+    <h2>Puerto Princesa</h2>
+    <figure>
+      <img src="river park.jpg" alt="Puerto Princesa Subterranean River National Park">
+      <figcaption>The Puerto Princesa Subterranean River.</figcaption>
+    </figure>
+    <video src="puerto-princesa.mp4" controls muted loop playsinline preload="metadata"></video>
+    <p>A spectacular limestone karst landscape and an 8.2-kilometer underground river that flows directly into the sea.</p>
+  </article>
+
+  <article id="chocolate-hills">
+    <h2>Chocolate Hills, Bohol</h2>
+    <figure>
+      <img src="chocolate hills.jpg" alt="Chocolate Hills in Bohol">
+      <figcaption>Over 1,200 cone-shaped hills that turn brown in the dry season.</figcaption>
+    </figure>
+    <video src="bohol.mp4" controls muted loop playsinline preload="metadata"></video>
+    <p>More than a thousand symmetrical, cone-shaped hills spread across Bohol's countryside. They turn chocolate-brown in the dry season, giving the landmark its name.</p>
+  </article>
+
+  <article id="Cebu">
+    <h2>Cebu Kawasan Falls</h2>
+    <figure>
+      <img src="falls.jpg" alt="Kawasan Falls">
+      <figcaption>Kawasan Falls is a famous three-tiered natural waterfall system with striking turquoise-blue pools.</figcaption>
+    </figure>
+    <video src="cebu.mp4" controls muted loop playsinline preload="metadata"></video>
+    <p>Visitors can swim in the cool natural pools or rent bamboo rafts to glide underneath the cascading water.</p>
+  </article>
+
+  <article id="siargao">
+    <h2>Siargao</h2>
+    <figure>
+      <img src="cloud9.jpg" alt="Surfer riding a wave at Cloud 9, Siargao">
+      <figcaption>Cloud 9, Siargao's world-renowned surf break.</figcaption>
+    </figure>
+    <video src="siargao.mp4" controls muted loop playsinline preload="metadata"></video>
+    <p>Known as the surfing capital of the Philippines, Siargao draws visitors to its famous Cloud 9 break, as well as its lagoons, island hopping tours, and laid-back island atmosphere.</p>
+  </article>
+</main>
+
+<footer>
+  <div class="wrap">
+    <h2>Contact Us</h2>
+    <ul>
+      <li><a href="https://workspace.google.com/intl/en-US/gmail/">Social media Account</a></li>
+      <li>map</li>
+      <li><a href="https://workspace.google.com/intl/en-US/gmail/">Email</a></li>
+    </ul>
+  </div>
+</footer>
+</body>
+</html>
